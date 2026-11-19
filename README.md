@@ -24,6 +24,24 @@ The classic Diabetes dataset (Efron et al., 2004; also available in scikit-learn
 4. **Sensitivity analysis:** refitting without influential observations and a log-transformed response (not retained).
 5. **Validation:** 10-fold cross-validation.
 
+   ## Tools
+
+- **Language:** R
+- **Report:** R Markdown (knitr) for the HTML report, LaTeX for the PDF report
+
+| Package | Used for |
+|---|---|
+| `readr`, `dplyr` | Data loading and manipulation |
+| `ggplot2` | Histograms, boxplots, scatterplots |
+| `corrplot` | Correlation matrix |
+| `MASS` | Stepwise AIC variable selection (`stepAIC`) |
+| `lmtest` | Breusch–Pagan test for heteroskedasticity |
+| `car` | Variance inflation factors (VIF) |
+| `Metrics` | RMSE |
+| `caret` | 10-fold cross-validation |
+| `knitr` | Tables in the HTML report |
+   
+
 ## Results
 
 | Model | Adj. R² | AIC | RMSE |
